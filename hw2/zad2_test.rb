@@ -1,12 +1,7 @@
-require './domain'
-require './simple_domain'
-require './composite_domain'
-require './fuzzy_set'
-require './mutable_fuzzy_set'
-require './calculated_fuzzy_set'
-require './standard_fuzzy_sets'
-require './debug'
-require './relations'
+require_relative '../hw1/domain'
+require_relative '../hw1/mutable_fuzzy_set'
+require_relative '../hw1/debug'
+require_relative 'relations'
 
 u1 = Domain.int_range(1, 5) # {1,2,3,4}
 u2 = Domain.int_range(1, 4) # {1,2,3}

@@ -29,6 +29,12 @@ module Operations
     new_set
   end
 
+  def self.product
+    lambda do |a,b|
+      a * b
+    end
+  end
+
   def self.zadeh_not
     lambda do |x|
       1 - x

@@ -1,4 +1,4 @@
-require './domain_element'
+require_relative './domain_element'
 
 class SimpleDomain
   include Domain

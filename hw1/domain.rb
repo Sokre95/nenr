@@ -1,7 +1,8 @@
 module Domain
+  require_relative 'domain_element'
   require_relative 'simple_domain'
   require_relative 'composite_domain'
-  
+
   def self.int_range(first, last)
     SimpleDomain.new(first,last)
   end

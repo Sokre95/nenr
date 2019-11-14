@@ -1,5 +1,5 @@
-require './domain'
-require './debug'
+require_relative './domain'
+require_relative './debug'
 
 d1 = Domain.int_range(0, 5)
 Debug.print_domain(d1, "Elementi domene 1")

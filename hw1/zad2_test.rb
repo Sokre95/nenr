@@ -1,5 +1,4 @@
 require './domain'
-require './domain_element'
 require './mutable_fuzzy_set'
 require './calculated_fuzzy_set'
 require './standard_fuzzy_sets'

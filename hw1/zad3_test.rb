@@ -1,7 +1,6 @@
-require './domain'
-require './domain_element'
-require './operations'
-require './debug'
+require_relative './domain'
+require_relative './operations'
+require_relative './debug'
 
 
 d = Domain.int_range(0, 11)

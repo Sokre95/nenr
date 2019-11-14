@@ -1,10 +1,7 @@
-require './domain'
-require './simple_domain'
-require './composite_domain'
-require './fuzzy_set'
-require './mutable_fuzzy_set'
-require './debug'
-require './relations'
+require_relative '../hw1/domain'
+require_relative '../hw1/mutable_fuzzy_set'
+require_relative '../hw1/debug'
+require_relative 'relations'
 
 u1 = Domain.int_range(1, 6)
 #Debug.print_domain(u1, "Elementi domene u1")
