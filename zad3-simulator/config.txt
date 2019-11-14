@@ -1,0 +1,4 @@
+ruby /home/coki/fer_projects/nenr/hw3/main.rb
+1
+20
+10
