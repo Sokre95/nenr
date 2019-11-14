@@ -1,3 +1,5 @@
+require_relative 'fuzzy_set'
+
 class MutableFuzzySet < FuzzySet
 
   def initialize(domain)

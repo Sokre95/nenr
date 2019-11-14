@@ -1,7 +1,5 @@
 require './domain'
-require './simple_domain'
-require './fuzzy_set'
-require './mutable_fuzzy_set'
+require './domain_element'
 require './operations'
 require './debug'
 

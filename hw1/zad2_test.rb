@@ -1,6 +1,5 @@
 require './domain'
-require './simple_domain'
-require './fuzzy_set'
+require './domain_element'
 require './mutable_fuzzy_set'
 require './calculated_fuzzy_set'
 require './standard_fuzzy_sets'
@@ -20,10 +19,5 @@ Debug.print_set(set, "Set 1:")
 puts
 d2 = Domain.int_range(-5, 6)
 
-set2 = CalculatedFuzzySet.new(d2, StandardFuzzySets.lambda_function(
-    d2.index_of_element(DomainElement.of([-4])),
-    d2.index_of_element(DomainElement.of([0])),
-    d2.index_of_element(DomainElement.of([4]))
-  )
-)
+set2 = CalculatedFuzzySet.new(d2, StandardFuzzySets.lambda_function(-4, 0, 4))
 Debug.print_set(set2, "Set 2:")

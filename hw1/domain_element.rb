@@ -24,6 +24,6 @@ class DomainElement
   end
 
   def ==(other_element)
-    @values.sort == other_element.values.sort
+    @values == other_element.values
   end
 end

@@ -1,6 +1,4 @@
 require './domain'
-require './simple_domain'
-require './composite_domain'
 require './debug'
 
 d1 = Domain.int_range(0, 5)

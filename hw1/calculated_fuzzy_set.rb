@@ -1,3 +1,5 @@
+require_relative 'fuzzy_set'
+
 class CalculatedFuzzySet < FuzzySet
 
   def initialize(domain, function)
@@ -6,6 +8,6 @@ class CalculatedFuzzySet < FuzzySet
   end
 
   def get_value_at(domain_element)
-    @function.call(index_of_element(domain_element))
+    @function.call(domain_element.get_component_value(0))
   end
 end

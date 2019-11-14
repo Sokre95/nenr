@@ -1,4 +1,4 @@
-require './domain_element.rb'
+require_relative 'domain_element'
 
 class CompositeDomain
   include Domain

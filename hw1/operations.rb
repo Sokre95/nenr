@@ -1,3 +1,5 @@
+require_relative 'mutable_fuzzy_set'
+
 module Operations
 
   def self.unary_operation(set, operation)
