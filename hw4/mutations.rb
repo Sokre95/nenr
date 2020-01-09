@@ -18,7 +18,7 @@ class GausianMutation < Mutation
   def mutate(individual)
     individual.size.times do |i|
       if rand() < @mutation_rate
-        individual[i] = individual[i] + rand_normal(0, 2)
+        individual[i] = individual[i] * rand_normal(0, 2)
       end
     end
   end

@@ -16,7 +16,7 @@ evaluator.set_measurements(DataSetParser.parse('./data/dataset1.txt'))
 elimination_ga = EliminationGeneticAlgorithm.new(
   population_size: 50,
   selection: KTournamentSelection.new(k: 3),
-  crossover: Crossovers::ArithmeticRecombination.new,
+  crossover: Crossovers::SingleArithmeticRecombination.new,
   mutation: GausianMutation.new(0.2),
   evaluator: evaluator,
   target_fitness: 0.01,

@@ -28,12 +28,14 @@ class GeneticAlgorithm
 
     def print_progress
       puts "Iteracija #{@iteration}; fitness: #{best.fitness}" if @iteration % 100 == 0
+      puts @best.values
       binding.pry if @iteration % 100000 == 0
     end
 
     def continue_evaluating?
       if @best.fitness <= @target_fitness
         puts "\tPronađeno zadovoljavajuće rješenje u #{@iteration} iteracija !"
+
         puts "\t#{best.to_s}"
         return false
       end

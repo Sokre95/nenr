@@ -3,8 +3,8 @@ require_relative './base_individual'
 class Individual < BaseIndividual
 
   # Min and max value for each beta/value
-  MIN = -4.0
-  MAX = 4.0
+  MIN = -1.0
+  MAX = 1.0
 
   def self.create_random
     betas = 5.times.map{ rand(MIN..MAX) }
@@ -19,5 +19,6 @@ class Individual < BaseIndividual
 
   def to_s
     self.values.each_with_index.map{ |value, index| "B#{index}:#{value.round(4).to_s}" }.join(' ') + " -> fitness: #{self.fitness}"
+    puts "betas: #{self.values}"
   end
 end
