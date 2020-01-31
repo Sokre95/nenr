@@ -22,9 +22,9 @@ net.set_params(params)
 output = net.forward([0.17, 0.25])
 puts "Output: #{output}"
 
-filepath = File.join(File.dirname(__FILE__), '../data/train-data.txt')
+filepath = File.join(File.dirname(__FILE__), "./data/train-data.txt")
 dataset = DataSet.read_from_file(filepath)
 
 error = net.calculate_error(dataset, params)
-puts "Erros: #{error}"
+puts "Errors: #{error}"
 binding.pry
